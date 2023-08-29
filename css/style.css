@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url('../Img/clear-snake-game.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+canvas {
+  margin-top: -15px;
+  background-color: #111;
+  opacity: .9;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  gap: 10px;
+  margin-top: -20px;
+}
+
+.score_value {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.menu_screen {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  color: #fff;
+}
+
+.game_over {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.final_score {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.btn_play {
+  border: none;
+  border-radius: 100px;
+  padding: 10px 15px 10px 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: all .3s ease;
+  margin-top: 15px;
+}
+
+.btn_play:hover {
+  background-color: #333;
+  color: #fff;
+
+}
